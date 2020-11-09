@@ -9,7 +9,7 @@ export default class CardRow extends Component {
         return (
             <div className="cardrow">
 				<div className={`cardrow__title ${(this.props.isWinner && "cardrow--winner" || "cardrow--loser" )}`} >
-					<h1>{this.props.player || "Pokedex"} {this.props.isWinner && " is the Winner" || " is the Loser"}</h1>
+					<h1>{this.props.player || "Pokedex"} {this.props.isWinner && " is the Winner 👍" || " is the Loser 👎"}</h1>
 					<p>Total exp Points is {this,this.props.exp || 0}</p>
 					
 				</div>

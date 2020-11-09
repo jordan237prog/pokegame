@@ -33,7 +33,7 @@ export default class Pokegame extends Component {
          let exp2 = hand2.reduce((exp, pokemons) => exp + pokemons.base_experience, 0)
         return (
             <div className="pokegame">
-                <h1>welcome to pokegame</h1>
+                <h1>🔥welcome to pokegame🔥</h1>
                 <h3>The player with the greater Total Exp wins </h3>
                 <button className="newGame" onClick={shareCard} >share cards(New Game)</button>
                 <CardRows pokemons={hand1} player="Player 1" exp={exp1} isWinner={exp1>exp2} />
