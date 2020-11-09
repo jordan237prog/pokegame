@@ -1,0 +1,60 @@
+.pokecard{
+    height: 245px;
+    max-width: 180px;
+    background-color: #fff;
+    border-radius:5px;
+    display: flex;
+    flex-direction: column;
+    transition: ease-in 200ms;
+    align-items: center;
+    -webkit-box-shadow: 0px 2px 2px 1px rgba(0,0,0,0.2);
+    -moz-box-shadow: 0px 2px 2px 1px rgba(0,0,0,0.2);
+    box-shadow: 0px 2px 2px 1px rgba(0,0,0,0.2);
+    margin: 40px auto;
+}
+
+.pokecard:hover > .pokecard__name, .pokecard:hover > .pokecard__abiliy {
+    transition: ease 4;
+    background-color: #1292dc; 
+}
+
+.pokecard:hover  {
+    transform: rotate(2deg);
+  transform-origin: 20% 40%;
+    box-shadow: 6px 7px 10px 10px rgba(0,0,0,0.2);
+    
+}
+
+.pokecard > img{
+    height: 160px;
+    contain: content;
+    background-color: #fff;
+}
+
+.pokecard__name{
+    top: 0;
+    border-radius:5px 5px 0 0  ;
+    background-color: #096FA8;
+    width: 100%;
+    font-weight: lighter;
+    display: flex;  
+    justify-content: center;
+    color: #fff;
+}
+
+.pokecard__abiliy{
+    bottom: 0;
+    border-radius:0 0 5px 5px  ;
+    background-color: #096FA8;
+    width: 100%;
+    font-weight: lighter;
+    display: flex;  
+    flex-direction: column;
+    justify-content: center;
+    color: #fff;
+}
+
+.pokecard__abiliy > p{
+    padding-left: 15px;
+}
+
